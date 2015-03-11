@@ -64,6 +64,20 @@ public class ScreenSlidePageFragment extends Fragment {
                 browser = (WebView) rootView.findViewById(R.id.webview);
                 browser.loadDataWithBaseURL("file:///android_asset/", getString(R.string.lorem_ipsum1), "text/html", "utf-8", null);
                 break;
+            case 2:
+
+                rootView = (ViewGroup) inflater.inflate(R.layout.fragment_screen_slide_page0, container, false);
+                ((TextView) rootView.findViewById(android.R.id.text1)).setText(getString(R.string.title_template_step, mPageNumber + 1));
+                browser = (WebView) rootView.findViewById(R.id.webview);
+                browser.loadDataWithBaseURL("file:///android_asset/", getString(R.string.lorem_ipsum2), "text/html", "utf-8", null);
+                break;
+            case 3:
+
+                rootView = (ViewGroup) inflater.inflate(R.layout.fragment_screen_slide_page0, container, false);
+                ((TextView) rootView.findViewById(android.R.id.text1)).setText(getString(R.string.title_template_step, mPageNumber + 1));
+                browser = (WebView) rootView.findViewById(R.id.webview);
+                browser.loadDataWithBaseURL("file:///android_asset/", getString(R.string.lorem_ipsum3), "text/html", "utf-8", null);
+                break;
 
             default:
                 rootView = (ViewGroup) inflater.inflate(R.layout.fragment_screen_slide_page, container, false);
