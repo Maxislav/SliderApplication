@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.TextView;
 
+import com.squareup.phrase.Phrase;
+
 public class ScreenSlidePageFragment extends Fragment {
 
     final static String CLASS_NAME = "ScreenSlidePageFragment log";
@@ -48,19 +50,27 @@ public class ScreenSlidePageFragment extends Fragment {
         // Inflate the layout containing a title and body text.
         ViewGroup rootView;
         WebView browser;
+        CharSequence formatted;
+        String t;
         Log.d(CLASS_NAME, mPageNumber + "");
+        TextView titleText;
         switch (mPageNumber){
             case 0:
 
                 rootView = (ViewGroup) inflater.inflate(R.layout.fragment_screen_slide_page0, container, false);
-                ((TextView) rootView.findViewById(android.R.id.text1)).setText(getString(R.string.title_template_step, mPageNumber + 1));
+                titleText =(TextView) rootView.findViewById(android.R.id.text1);
+                 t = getString(R.string.title_template_step, mPageNumber + 1);
+                formatted = Phrase.from(t).put("name","Angelina Jolie").format();
+                titleText.setText(formatted);
                 browser = (WebView) rootView.findViewById(R.id.webview);
-                browser.loadDataWithBaseURL("file:///android_asset/", getString(R.string.lorem_ipsum0), "text/html", "utf-8", null);
+                browser.loadUrl("file:///android_asset/joly.html");
                 break;
             case 1:
-
                 rootView = (ViewGroup) inflater.inflate(R.layout.fragment_screen_slide_page0, container, false);
-                ((TextView) rootView.findViewById(android.R.id.text1)).setText(getString(R.string.title_template_step, mPageNumber + 1));
+                titleText =(TextView) rootView.findViewById(android.R.id.text1);
+                 t = getString(R.string.title_template_step, mPageNumber + 1);
+                formatted = Phrase.from(t).put("name","Bradley Pitt").format();
+                titleText.setText(formatted);
                 browser = (WebView) rootView.findViewById(R.id.webview);
                 browser.loadDataWithBaseURL("file:///android_asset/", getString(R.string.lorem_ipsum1), "text/html", "utf-8", null);
                 break;

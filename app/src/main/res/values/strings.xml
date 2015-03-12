@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="rn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="title_template_step">Step <xliff:g id="step_number">%1$d</xliff:g>: LoremIpsum</string>
+    <string name="title_template_step">Step <xliff:g id="step_number">%1$d</xliff:g>: {name}</string>
 
 
     <string name="hello_world">Hello world!</string>
@@ -46,7 +46,7 @@
 
 
           <img src="Angelina_Jolie_2_June_2014.jpg" style="width:30dp; height:80dp; border: 1px solid gray; float: left">
-            <p>
+            <p style="float:right">
            Angelina Jolie (/dʒoʊˈliː/ joh-lee born Angelina Jolie Voight; June 4, 1975) is an American actress, filmmaker, and humanitarian. She has received an Academy Award, two Screen Actors Guild Awards, and three Golden Globe Awards, and has been cited as Hollywood\'s highest-paid actress. Jolie made her screen debut as a child alongside her father, Jon Voight, in Lookin\' to Get Out (1982). Her film career began in earnest a decade later with the low-budget production Cyborg 2 (1993), followed by her first leading role in a major film, Hackers (1995). She starred in the critically acclaimed biographical television films George Wallace (1997) and Gia (1998), and won an Academy Award for Best Supporting Actress for her performance in the drama Girl, Interrupted (1999).
 </p>
                 <p>
